@@ -1,1 +1,3 @@
 # Calculadora-AuraNebula
+Integrantes: Bautista Schiavoni, Nahum Oyola, Danilo Vicente
+Comenzando...
