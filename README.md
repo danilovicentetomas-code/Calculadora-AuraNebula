@@ -1,3 +1,8 @@
 # Calculadora-AuraNebula
-Integrantes: Bautista Schiavoni, Nahum Oyola, Danilo Vicente
+Integrantes:
+| Nahum Oyola | Bautista Schiavoni | Danilo Vicente |
+|--------------|--------------|--------------|
+| Multi-Division | Sumas-Resta | Documentacion |
+
+
 Comenzando...
