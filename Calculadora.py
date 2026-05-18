@@ -1,35 +1,31 @@
-resultado = 0 
-print ("elija una entre divicion, multiplicasion, suma o resta")
-a=int(input("Ingrese un numero: "))
-b=int(input("Ingrese otro numero: "))
-def suma():
-    a+b
-    resultado=a+b
-    return(resultado)
-def resta():
-    a-b
-    resultado=a-b
-    return(resultado)
-print("El resultado de la suma es: ")
-print(a+b)
-print("EL resultado de la resta es: ")
-print(a-b)
+def suma(a, b):
+    return a + b
 
-resultado = 0 
-print ("elija una entre divicion y multiplicasion")
-def divicion ():
- a = int (input ("escribe el primer numero "))
- b = int (input ("escribe el segudo numero"))
- resultado = a/b
- return (resultado)
+def resta(a, b):
+    return a - b
 
-def multiplicasion ():
- a = int (input ("escribe el primer numero"))
- b = int (input ("escribe el segundo numero"))
- resultado = a * b
- return (resultado)
+def division(a, b):
+    if b == 0:
+        return "Error: división entre cero"
+    return a / b
 
+def multiplicacion(a, b):
+    return a * b
 
-if __name__ == "__main__":
-    print("Suma:", suma(10, 5))
-    print("Resta:", resta(10, 5))
+# Menú
+print("Elija una operación: suma, resta, division o multiplicacion")
+operacion = input("Operación: ").lower()
+
+a = int(input("Ingrese el primer número: "))
+b = int(input("Ingrese el segundo número: "))
+
+if operacion == "suma":
+    print("Resultado:", suma(a, b))
+elif operacion == "resta":
+    print("Resultado:", resta(a, b))
+elif operacion == "division":
+    print("Resultado:", division(a, b))
+elif operacion == "multiplicacion":
+    print("Resultado:", multiplicacion(a, b))
+else:
+    print("Operación no válida")
